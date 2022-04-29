@@ -122,7 +122,7 @@ class SelectDrug extends StatelessWidget {
                 quantity: controller.quantity.toInt(),
                 totalPrice:
                     controller.quantity.toInt() * product.productPrice));
-
+            controller.onClose();
             Get.back();
           },
         ),
